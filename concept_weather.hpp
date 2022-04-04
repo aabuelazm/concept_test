@@ -4,9 +4,9 @@
 
 namespace concept_weather {
   template<class T>
-  concept Subject = requires(T subject_class) {
-    subject_class.register_observer();
-    subject_class.remove_observer();
+  concept Subject = requires(T subject_class, void* observer_class) {
+    subject_class.register_observer(observer_class);
+    subject_class.remove_observer(observer_class);
     subject_class.notify_observer();
   };
 
