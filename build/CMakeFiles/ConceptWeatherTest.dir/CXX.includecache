@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aabuelazm/Desktop/concept_test/concept_test/concept_weather.hpp
+algorithm
+-
+list
+-
+
+/home/aabuelazm/Desktop/concept_test/concept_test/concept_weather_test.cpp
+displays_weather.hpp
+/home/aabuelazm/Desktop/concept_test/concept_test/displays_weather.hpp
+
+/home/aabuelazm/Desktop/concept_test/concept_test/data_weather.hpp
+concept_weather.hpp
+/home/aabuelazm/Desktop/concept_test/concept_test/concept_weather.hpp
+
+/home/aabuelazm/Desktop/concept_test/concept_test/displays_weather.hpp
+data_weather.hpp
+/home/aabuelazm/Desktop/concept_test/concept_test/data_weather.hpp
+iostream
+-
+
