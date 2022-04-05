@@ -11,7 +11,8 @@ private:
   WeatherData *station;
 
 public:
-  CurrentConditionsDisplay(WeatherData *o) : station(o) {
+  CurrentConditionsDisplay(WeatherData *o) {
+    this->station = o;
     station->register_observer(this);
   }
 
@@ -38,7 +39,8 @@ private:
   WeatherData *station;
 
 public:
-  StatisticsDisplay(WeatherData *o) : station(o) {
+  StatisticsDisplay(WeatherData *o) {
+    this->station = o;
     station->register_observer(this);
   }
 
@@ -71,7 +73,8 @@ private:
   WeatherData *station;
 
 public:
-  ForecastDisplay(WeatherData *o) : station(o) {
+  ForecastDisplay(WeatherData *o) {
+    this->station = o;
     station->register_observer(this);
   }
 

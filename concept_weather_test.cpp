@@ -3,13 +3,13 @@ using namespace concept_weather;
 using namespace std;
 
 int main() {
-  WeatherData weather_data;
+  auto *weather_data = new WeatherData;
 
-  CurrentConditionsDisplay current_display(&weather_data);
-  StatisticsDisplay static_display(&weather_data);
-  ForecastDisplay forecast_display(&weather_data);
+  auto *current_display = new CurrentConditionsDisplay(weather_data);
+  auto *statistic_display = new StatisticsDisplay(weather_data);
+  auto *forecast_display = new ForecastDisplay(weather_data);
 
-  weather_data.set_measurements(80, 65, 30.4);
-  weather_data.set_measurements(82, 70, 29.2);
-  weather_data.set_measurements(78, 90, 29.2);
+  weather_data->set_measurements(80, 65, 30.4);
+  weather_data->set_measurements(82, 70, 29.2);
+  weather_data->set_measurements(78, 90, 29.2);
 }
