@@ -1,24 +1,38 @@
 #ifndef CONCEPT_WEATHER_HPP
 #define CONCEPT_WEATHER_HPP
-#include <concepts>
+#include <vector>
+#include <algorithm>
 
 namespace concept_weather {
-  template<class T>
-  concept Subject = requires(T subject_class, void* observer_class) {
-    subject_class.register_observer(observer_class);
-    subject_class.remove_observer(observer_class);
-    subject_class.notify_observer();
+  class Observer {
+  public:
+    virtual void update();
   };
 
-  template<class T>
-  concept Observer = requires(T observer_class) {
-    observer_class.update();
+  class Subject {
+  protected:
+    std::vector<Observer*> observers{};
+
+  public:
+    void register_observer(Observer* o) {
+      observers.push_back(o);
+    }
+
+    void remove_observer(Observer* o) {
+      observers.erase(std::find(observers.begin(), observers.end(), o));
+    }
+
+    void notify_observers() {
+      for (auto o : observers) {
+        o->update();
+      }
+    }
   };
 
-  template<class T>
-  concept DisplayElement = requires(T display_class) {
-    display_class.display();
+  class DisplayElement {
+  public:
+    virtual void display();
   };
-}
+} // namespace concept_weather
 
 #endif
