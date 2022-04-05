@@ -11,7 +11,7 @@ private:
   float pressure{};
 
 public:
-  WeatherData();
+  WeatherData() {}
 
   void set_measurements(float temp, float hum, float press) {
     temperature = temp;
