@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.16)
 project(ConceptWeatherTest)
 
 # add the executable
-add_executable(ConceptWeatherTest concept_weather_test.cpp)
+add_executable(ConceptWeatherTest concept_weather_test.cpp concept_weather.hpp data_weather.hpp displays_weather.cpp displays_weather.hpp)
