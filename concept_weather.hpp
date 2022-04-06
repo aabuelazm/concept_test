@@ -2,7 +2,7 @@
 #define CONCEPT_WEATHER_HPP2
 
 #include <algorithm>
-#include <list>
+#include <vector>
 
 namespace concept_weather {
 class Observer {
@@ -12,7 +12,7 @@ public:
 
 class Subject {
 protected:
-  std::list<Observer *> observers{};
+  std::vector<Observer *> observers{};
 
 public:
   void register_observer(Observer *o) { observers.push_back(o); }
