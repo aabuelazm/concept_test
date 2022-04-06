@@ -8,9 +8,9 @@ namespace concept_weather {
 class CurrentConditionsDisplay : virtual public Observer,
                                  virtual public DisplayElement {
 private:
-  float temperature;
-  float humidity;
-  WeatherData *station;
+  float temperature{};
+  float humidity{};
+  WeatherData *station{};
 
 public:
   CurrentConditionsDisplay(WeatherData *o);
@@ -21,12 +21,12 @@ public:
 class StatisticsDisplay : virtual public Observer,
                           virtual public DisplayElement {
 private:
-  float max_temp;
-  float min_temp;
-  float temp_sum;
+  float max_temp{};
+  float min_temp{};
+  float temp_sum{};
 
-  int num_readings;
-  WeatherData *station;
+  int num_readings{};
+  WeatherData *station{};
 
 public:
   StatisticsDisplay(WeatherData *o);
@@ -36,9 +36,9 @@ public:
 
 class ForecastDisplay : virtual public Observer, virtual public DisplayElement {
 private:
-  float current_pressure;
-  float last_presure;
-  WeatherData *station;
+  float current_pressure{};
+  float last_pressure{};
+  WeatherData *station{};
 
 public:
   ForecastDisplay(WeatherData *o);

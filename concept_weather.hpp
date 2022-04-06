@@ -1,5 +1,5 @@
 #ifndef CONCEPT_WEATHER_HPP
-#define CONCEPT_WEATHER_HPP2
+#define CONCEPT_WEATHER_HPP
 
 #include <algorithm>
 #include <vector>
