@@ -1,3 +1,4 @@
 .ccls-cache
 *.gch
 /build/
+compile_commands.json
