@@ -1,3 +1,0 @@
-/home/aabuelazm/Desktop/concept_test/concept_test/build/CMakeFiles/rebuild_cache.dir
-/home/aabuelazm/Desktop/concept_test/concept_test/build/CMakeFiles/edit_cache.dir
-/home/aabuelazm/Desktop/concept_test/concept_test/build/CMakeFiles/ConceptWeatherTest.dir
