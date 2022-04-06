@@ -8,7 +8,7 @@ class CurrentConditionsDisplay : virtual public DisplayElement,
 private:
   float temperature{};
   float humidity{};
-  WeatherData *station{};
+  WeatherData *station = nullptr;
 
 public:
   CurrentConditionsDisplay(WeatherData *o) : station(o) {
@@ -35,7 +35,7 @@ private:
   float temp_sum{};
 
   int num_readings{};
-  WeatherData *station{};
+  WeatherData *station = nullptr;
 
 public:
   StatisticsDisplay(WeatherData *o) : station(o) {
@@ -68,7 +68,7 @@ class ForecastDisplay : virtual public Observer, virtual public DisplayElement {
 private:
   float current_pressure{29.92};
   float last_pressure{};
-  WeatherData *station{};
+  WeatherData *station = nullptr;
 
 public:
   ForecastDisplay(WeatherData *o) : station(o) {
