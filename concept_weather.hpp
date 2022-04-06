@@ -7,7 +7,7 @@
 namespace concept_weather {
 class Observer {
 public:
-  virtual void update();
+  virtual void update() {}
 };
 
 class Subject {
@@ -30,7 +30,7 @@ public:
 
 class DisplayElement {
 public:
-  virtual void display();
+  virtual void display() {}
 };
 } // namespace concept_weather
 
