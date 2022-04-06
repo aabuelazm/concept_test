@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/aabuelazm/Desktop/concept_test/concept_test/build",
-  "command": "/usr/bin/c++      -o CMakeFiles/ConceptWeatherTest.dir/concept_weather_test.cpp.o -c /home/aabuelazm/Desktop/concept_test/concept_test/concept_weather_test.cpp",
-  "file": "/home/aabuelazm/Desktop/concept_test/concept_test/concept_weather_test.cpp"
-}
-]
